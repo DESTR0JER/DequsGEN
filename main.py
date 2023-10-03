@@ -2,8 +2,11 @@ import random
 import string
 import colorama
 from colorama import Fore
+import os
 
 colorama.init()
+
+os.system("title DequsGen v1.0.0")
 
 def generator(filename, look, lenght):
     def generate_random_code():
@@ -15,7 +18,7 @@ def generator(filename, look, lenght):
         
         return code
     random_code_list = ""
-    for i in range(100000):
+    for i in range(100001):
         random_code = generate_random_code()
 
         print(f"{i}. {random_code}")
